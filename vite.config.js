@@ -6,8 +6,9 @@ export default {
         rollupOptions: {
             input: {
                 index: "./src/index.html",
-                expiditions: "./src/expeditions.html",
-                terms: "./src/terms-and-conditions.html"
+                expeditions: "./src/expeditions.html",
+                terms: "./src/terms-and-conditions.html",
+                privacy: "./src/privacy.html"
             }
         }
     }
