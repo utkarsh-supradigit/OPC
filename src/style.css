@@ -531,14 +531,14 @@ svg {
 }
 
 
-.app .container>.flex {
+.app .row {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 100px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
-.app .flex>div {
+.app .row > div {
   width: 50%;
   flex: 0 0 auto;
 }
@@ -576,7 +576,11 @@ svg {
 }
 
 @media (max-width: 768px) {
-  .app .flex > div {
+  .app .row {
+    flex-direction: column;
+  }
+
+  .app .row > div {
     width: 100%;
   }
 
@@ -616,6 +620,7 @@ svg {
 .app-download .flex {
   justify-content: space-between;
   align-items: center;
+  padding: 30px 15px;
 }
 
 .app-download h4 {
@@ -637,15 +642,14 @@ svg {
   color: black;
 }
 
-@media (max-width: 768px) {
-  .app-download {
-    margin-bottom: 0;
-  }
+.app-download {
+  margin-bottom: 0;
+}
 
+@media (max-width: 768px) {
   .app-download .flex {
     flex-direction: column;
     gap: 40px;
-    padding: 30px 15px;
   }
 
   .app-download img {
