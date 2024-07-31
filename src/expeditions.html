@@ -12,6 +12,26 @@
         <div class="logo">
           <h1><a href="/">OPC</a></h1>
         </div>
+        <div class="menu-block">
+          <ul class="nav-menu flex">
+            <li><a href="/">Home</a></li>
+            <li><a href="#hkc">HKC</a></li>
+            <li><a href="/expeditions">Expeditions</a></li>
+            <li><a href="/expeditions" class="btn btn--secondary">Download Now</a></li>
+          </ul>
+        </div>
+        <span class="hamburger-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
+        </span>
+      </div>
+      <div class="mobile-menu">
+        <span class="close">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </span>
         <ul class="nav-menu flex">
           <li><a href="/">Home</a></li>
           <li><a href="#hkc">HKC</a></li>
@@ -21,7 +41,7 @@
       </div>
     </header>
     <main>
-      <section class="expeditions">
+      <section class="expeditions" style="margin-top: 50px">
         <div class="container">
           <div class="section-heading center">
             <h2>Our Latest Expeditions</h2>
@@ -72,16 +92,16 @@
           </div>
         </div>
       </section>
-      <section style="background-color: #E2F3FE; text-align: center;">
-        <img src="./assets/expeditions-hero.png" style="width: 75%;">
+      <section class="image-section">
+        <img src="./assets/expeditions-hero.png">
       </section>
       <section class="app">
         <div class="container">
-          <div class="flex" style="margin-top: 50px;">
+          <div class="flex row" style="margin-top: 50px;">
             <div class="image-box" style="background-position-x: -23px;">
-              <img src="./assets/Explore Themes.jpg" style="border-radius: 5px; transform: translateX(50%) rotate(-10deg);">
+              <img src="./assets/Explore Themes.jpg" class="app-image-1">
             </div>
-            <div>
+            <div class="content">
               <h4>Exploring Horizons: Philanthropy for Health, Culture, and Knowledge</h4>
               <ul>
                 <li>Explore wellness through nutrition, exercise, and positivity.</li>
@@ -90,11 +110,11 @@
               </ul>
             </div>
           </div>
-          <div class="flex flex-reverse">
+          <div class="flex flex-reverse row">
             <div class="image-box">
-              <img src="./assets/Cultural Destination.jpg" style="border-radius: 5px; transform: translateX(70%) rotate(10deg);">
+              <img src="./assets/Cultural Destination.jpg" class="app-image-2">
             </div>
-            <div>
+            <div class="content">
               <h4>What Makes a Cultural Destination with OPC Truly Unique?</h4>
               <ul>
                 <li>Delve into the rich history and heritage of each locale.</li>
@@ -107,7 +127,7 @@
       </section>
       <section class="app-download">
         <div class="container">
-          <div class="flex" style="justify-content: space-between; align-items: center;">
+          <div class="flex">
             <div>
               <img src="./assets/playstore-section-image.png" alt="" width="400">
             </div>
@@ -137,7 +157,10 @@
         <div class="flex top">
           <div class="footer-column">
             <div class="flex-column">
-              <a href="/"><img src="./assets/OPC_Logo.webp" alt=""></a>
+              <a href="/">
+                <span style="font-size: 48px; font-weight: 600;">OPC</span>
+                <!--<img src="./assets/OPC_Logo.webp" alt="">-->
+              </a>
               <p>Exploring Horizons: Philanthropy for Health, Culture, and Knowledge</p>
             </div>
           </div>
@@ -161,7 +184,7 @@
                   </svg>
                 </span>
                 <span>
-                  +9312144277
+                  +919082838644
                 </span>
               </li>
               <li class="flex">
