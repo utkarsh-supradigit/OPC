@@ -690,10 +690,3 @@ svg {
         width: 92%
     }
 }
-
-#terms header,
-#terms footer,
-#privacy header,
-#privacy footer {
-    display: none;
-}
