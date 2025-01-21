@@ -12,16 +12,32 @@
     <header>
       <div class="container flex">
         <div class="logo">
-          <a href="index.html">
-            <img src="./assets/OPC Logo.jpeg" alt="OPC" />
+          <a href="/index.html">
+            <img src="./assets/Final Logo.png" alt="OPC" />
           </a>
         </div>
         <div class="menu-block">
           <ul class="nav-menu flex">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="hkc.html">HKC</a></li>
-            <li class="active"><a href="expeditions.html">Expeditions</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/hkc.html">HKC</a></li>
+            <li class="active">
+              <a href="/expeditions.html">Expeditions</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="/expeditions/expedition-1.html">Expedition 1</a>
+                </li>
+                <li>
+                  <a href="/expeditions/expedition-2.html">Expedition 2</a>
+                </li>
+                <li>
+                  <a href="/expeditions/expedition-3.html">Expedition 3</a>
+                </li>
+                <li>
+                  <a href="/expeditions/expedition-4.html">Expedition 4</a>
+                </li>
+              </ul>
+            </li>
             <li>
               <a href="expeditions.html#app-download" class="btn btn--secondary"
                 >Download Now</a
@@ -64,9 +80,10 @@
           </svg>
         </span>
         <ul class="nav-menu flex">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#hkc">HKC</a></li>
-          <li><a href="expeditions.html">Expeditions</a></li>
+          <li class="active"><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/hkc.html">HKC</a></li>
+          <li><a href="/expeditions.html">Expeditions</a></li>
           <li>
             <a href="expeditions.html#app-download" class="btn btn--secondary"
               >Download Now</a
@@ -76,7 +93,7 @@
       </div>
     </header>
     <main>
-      <section class="expeditions-page" style="margin: 50px 0;">
+      <section class="expeditions-page" style="margin: 50px 0">
         <div class="container">
           <div class="section-heading center">
             <h2>Our Latest Expeditions</h2>
@@ -90,7 +107,7 @@
                 through nutrition and exercise, guiding participants towards
                 improved well-being.
               </p>
-              <p style="margin-top: 40px; margin-bottom: 25px;">
+              <p style="margin-top: 40px; margin-bottom: 25px">
                 Please download our app for joining our expeditions
               </p>
               <a
@@ -101,8 +118,8 @@
               >
             </div>
             <div class="expeditions-list">
-              <div class="expedition-item">
-                <h3>An Odyssey of Adventure</h3>
+              <div class="expedition-item" id="expedition-1">
+                <h3>Expedition 1: An Odyssey of Adventure</h3>
                 <div class="dates">
                   <strong>Dates: </strong>November 2022 - April, 2023
                   (Completed)
@@ -139,7 +156,7 @@
                   />
                 </div>
               </div>
-              <div class="expedition-item">
+              <div class="expedition-item" id="expedition-2">
                 <h3>A Journey of Discovery</h3>
                 <div class="dates">
                   <strong>Dates: </strong>February 21, 2024 - March 20, 2024
@@ -193,7 +210,7 @@
                   />
                 </div>
               </div>
-              <div class="expedition-item">
+              <div class="expedition-item" id="expedition-3">
                 <h3>A Spiritual Sojourn Through South India</h3>
                 <div class="dates">
                   <strong>Dates: </strong>August 15, 2024 – August 30, 2024
