@@ -825,36 +825,36 @@ svg {
   margin-top: 80px;
 }
 
-.expeditions-page .expeditions-list .expedition-item {
-  margin: 40px 0;
+.expeditions-page .expeditions-list .expedition-item-new {
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.expeditions-page .expeditions-list .expedition-item-new h3 a {
+  font-weight: 600;
+}
+
+.expeditions-page .expeditions-list .expedition-item-new .expedition-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.expeditions-page .expeditions-list .expedition-item h3 {
-  font-size: 32px;
+.expeditions-page .expeditions-list .expedition-item-new img {
+  border-radius: 5px;
+  width: 400px;
 }
 
-.expeditions-page .expeditions-list .expedition-item .dates {
-  font-size: 18px;
-}
+@media (max-width: 768px) {
+  .expeditions-page .expeditions-list .expedition-item-new img {
+    width: 100%;
+  }
 
-.expeditions-page .expeditions-list .expedition-item .image-list {
-  display: flex;
-  gap: 20px;
-  width: 100%;
-  padding-bottom: 10px;
-  overflow: auto;
-}
-
-.expeditions-page .expeditions-list .expedition-item .content {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.expeditions-page .expeditions-list .expedition-item .content p {
-  margin-bottom: 10px;
+  .expeditions-page .expeditions-list .expedition-item-new .flex {
+    flex-direction: column;
+  }
 }
 
 .image-masonry {
@@ -867,7 +867,7 @@ svg {
 }
 
 .single-expedition-page .hidden {
-    display: none;
+  display: none;
 }
 
 .single-expedition-page section {
@@ -875,13 +875,19 @@ svg {
 }
 
 .single-expedition-page h1 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .single-expedition-page section h2 {
   margin-bottom: 15px;
   counter-increment: section;
   font-size: 32px;
+  background-color: #022861b2;
+  padding-left: 15px;
+  border-radius: 5px;
+  color: white;
+  border-left: 10px solid var(--primary-color);
+  padding-bottom: 5px;
 }
 
 .single-expedition-page section h2::before {
@@ -895,12 +901,11 @@ svg {
 }
 
 .single-expedition-page .image-masonry img {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .single-expedition-page.expedition-2 .locations .container > div,
 .single-expedition-page.expedition-4 .locations .container > div {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
-
